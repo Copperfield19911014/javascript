@@ -9,4 +9,6 @@
 
 http-equiv="X-UA-Compatible"
 
+如果指定了该值，则content属性必须具有值"IE=edge"。用户代理必须忽略此指示。
+
 
