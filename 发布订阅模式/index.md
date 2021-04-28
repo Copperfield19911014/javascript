@@ -1,5 +1,4 @@
-# 块级作用域
-### js 发布订阅模式简单dmeo
+# js 发布订阅模式简单dmeo
 ---
     class PublishSubscribe{
         constructor(){}
@@ -14,9 +13,6 @@
         }
 
         trigger(type, params){
-            // if(this.funcs.indexOf(func) < 0){
-            //     console.log("没有订阅该事件");
-            // };
 
             this.funcs[type].forEach(event => {
                 event(params);
@@ -36,10 +32,7 @@
         console.log(params + "您好！！！");
     }
 
-    // function thePublish(info){
-    //     console.log("发布了消息：" + info);
-    // };
-
+    /*订阅消息
     ps.listen("theSubscribe", theSubscribe);
 
     ps.listen("theSubscribe", theSubscribe);
@@ -47,12 +40,10 @@
     ps.listen("theSubscribe", theSubscribe);
 
     ps.listen("theSubscribe", theSubscribe2);
+    */
 
-    console.log(ps);
-
+    //发布消息事件
     function triggerPublish(){
         ps.trigger("theSubscribe", "111");
-
-        // ps.trigger(theSubscribe2, "222");
 
     };
